@@ -1,0 +1,50 @@
+baseURL: 'http://example.org/'
+languageCode: 'zh-CN'
+title: '她乡助力团'
+theme: 'inventory'
+
+security:
+  exec:
+    allow: ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+    
+params:
+  # "Edit this page" feature: git forge content base link
+  # [Example] editPrefix: https://github.com/username/repo-name/blob/main/content
+  editPrefix: https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content
+
+  # Shown on all pages. When logo is empty, it will show your site title, set above.
+  logo: ""
+
+  # OpenGraph data
+  description: UNICEF Inventory Theme. This Hugo-powered static site is documentation for and an example of the UNICEF Inventory Theme.
+  author: UNICEF Office of Innovation, and others
+  # Tip: Find a royalty-free image from unsplash.com for an OpenGraph image.
+  image: "images/banner.jpg"
+
+  # customize color
+  primary_color: "#1CABE2"
+  primary_color_light: "#1b66b1"
+  body_color: "#f2f4f6"
+  text_color: "#636363"
+  text_color_dark: "#374ea2"
+  text_title_color: "#ffffff"
+  white_color: "#ffffff"
+  light_color: "#f8f9fa"
+
+  # font family (choose from https://fonts.google.com/)
+  font_family: "Lato"
+
+  # contact form action (works with https://formspree.io)
+  contact_form_action: "#"
+
+  # related article number limit
+  article_count: 3
+
+  # brand and identity information
+  brand:
+    parent_org_name: UNICEF Global
+    parent_org_url: https://www.unicef.org/
+    parent_org_url_legal: https://www.unicef.org/legal
+  footer:
+    mainSite: https://www.unicef.org/innovation/
+    mainSiteName: UNICEF Office of Innovation
