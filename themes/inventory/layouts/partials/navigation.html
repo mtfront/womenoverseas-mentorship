@@ -11,7 +11,7 @@
           src="{{ $logo | absURL }}"
           alt="{{ site.Title }}">
         {{ end }}
-        <a class="text-center text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a>
+        <!-- <a class="text-center text-white d-block px-1" href="{{ site.BaseURL | relLangURL }}">{{ site.Title }}</a> -->
       </div>
       
     </div>
@@ -39,7 +39,7 @@
         </li>
         {{ else }}
         <li class="nav-item">
-          <a class="nav-link text-white" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          <a class="nav-link text-primary" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         {{ end }}
@@ -66,8 +66,6 @@
         {{ end }}
       </select>
       {{ end }}
-      <p class="text-white unicef-glob ml-4 mt-3">Visit <a href="{{ $orgUrl }}" class="text-white">{{ $orgName }} <i
-        class="fas fa-angle-double-right"></i></a></p>
     </div>
   </div>
   {{ if not .IsHome }}

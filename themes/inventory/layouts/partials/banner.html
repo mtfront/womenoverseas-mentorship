@@ -2,10 +2,14 @@
 <div class="container section">
 	<div class="row">
 		<div class="col-lg-8 text-center mx-auto">
-			<h1 class="text-white mb-3">{{ .Site.Params.banner.title | markdownify }}</h1>
-			<p class="text-white mb-4">{{ .Site.Params.banner.subtitle | markdownify }}</p>
+			<!-- <h1 class="text-white mb-3">{{ .Site.Params.banner.title | markdownify }}</h1>
+			<p class="text-white mb-4">{{ .Site.Params.banner.subtitle | markdownify }}</p> -->
+			<div class="title-banner">
+				<img width="360" src="{{ site.Params.title | absURL }}">
+				<img width="360" src="{{ site.Params.title_en | absURL }}">
+			</div>
 			<div class="position-relative">
-				<input id="search" class="form-control" placeholder="{{ .Site.Params.banner.placeholder }}">
+				<input id="search" class="form-control search" placeholder="{{ .Site.Params.banner.placeholder }}">
 				<i class="ti-search search-icon"></i>
 				<!-- Javascript -->
 				{{ $currentNode := . }}

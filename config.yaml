@@ -3,6 +3,7 @@ languageCode: 'zh-CN'
 title: '她乡助力团'
 theme: 'inventory'
 
+
 security:
   exec:
     allow: ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
@@ -13,7 +14,9 @@ params:
   editPrefix: https://github.com/unicef/inventory-hugo-theme/blob/main/exampleSite/content
 
   # Shown on all pages. When logo is empty, it will show your site title, set above.
-  logo: ""
+  logo: 'logo.svg'
+  title: 'title.svg'
+  title_en: 'title-en.svg'
 
   # OpenGraph data
   description: UNICEF Inventory Theme. This Hugo-powered static site is documentation for and an example of the UNICEF Inventory Theme.
@@ -22,9 +25,9 @@ params:
   image: "images/banner.jpg"
 
   # customize color
-  primary_color: "#1CABE2"
-  primary_color_light: "#1b66b1"
-  body_color: "#f2f4f6"
+  primary_color: "#D98355"
+  primary_color_light: "#F2CCBB"
+  body_color: "#ffffff"
   text_color: "#636363"
   text_color_dark: "#374ea2"
   text_title_color: "#ffffff"
@@ -40,11 +43,32 @@ params:
   # related article number limit
   article_count: 3
 
-  # brand and identity information
-  brand:
-    parent_org_name: UNICEF Global
-    parent_org_url: https://www.unicef.org/
-    parent_org_url_legal: https://www.unicef.org/legal
-  footer:
-    mainSite: https://www.unicef.org/innovation/
-    mainSiteName: UNICEF Office of Innovation
+  banner:
+    placeholder: "按助力者所在地或行业搜索"
+
+  # # brand and identity information
+  # brand:
+  #   parent_org_name: UNICEF Global
+  #   parent_org_url: https://www.unicef.org/
+  #   parent_org_url_legal: https://www.unicef.org/legal
+  # footer:
+  #   mainSite: https://www.unicef.org/innovation/
+  #   mainSiteName: UNICEF Office of Innovation
+
+menu:
+  main:
+    - name: 浏览全部助力者
+      weight: 10
+      url: faq
+    - name: 成为助力者
+      weight: 20
+      url: contact
+    - name: 关于助力团
+      weight: 30
+      url: pages
+    - name: 联系我们
+      weight: 40
+      url: pages
+    - name: 加入论坛
+      weight: 50
+      url: pages
